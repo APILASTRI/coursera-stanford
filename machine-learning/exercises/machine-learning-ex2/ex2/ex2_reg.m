@@ -19,7 +19,7 @@
 
 %% Initialization
 clear ; close all; clc
-
+ 
 %% Load Data
 %  The first two columns contains the X values and the third column
 %  contains the label (y).
