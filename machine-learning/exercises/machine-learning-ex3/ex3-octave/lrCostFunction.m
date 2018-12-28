@@ -34,19 +34,20 @@ grad = zeros(size(theta));
 %           temp = theta; 
 %           temp(1) = 0;   % because we don't add anything for j = 0  
 %           grad = grad + YOUR_CODE_HERE (using the temp variable)
-%
+    
+    z = X * theta;
+    h = sigmoid(z);
+    
+    % Adicionando bias
+    theta(1) = 0;
+    
+    % Calculando J
+    unreg_J = (1 / m) * (-y' * log(h) - (1 - y)' * log(1 - h)); % Custo sem regularização
+    reg_J = (lambda / (2 * m)) * (theta' * theta); % Custo da regularização
 
-
-
-
-
-
-
-
-
-
-% =============================================================
-
-grad = grad(:);
-
+    J = unreg_J + reg_J; % Somando os termos
+    
+    # Calcula gradiente para theta_0
+    grad = (X' * (h - y) + lambda * theta) / m; % Termo (lambda*theta/2) aplicado
+    
 end
