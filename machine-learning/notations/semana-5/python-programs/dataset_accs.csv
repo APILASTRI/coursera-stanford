@@ -1,0 +1,3 @@
+acc_train,acc_train_cv,acc_train_scaled,acc_test,acc_test_scaled,acc_test_grid,acc_test_shifted
+1.0,0.8617,0.8604,0.88,0.6226,0.889,0.9211
+0.8825,0.8678,0.9101,0.8841,0.9139,0.9139,0.8532
