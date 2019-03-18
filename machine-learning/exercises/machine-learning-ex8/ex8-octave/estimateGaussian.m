@@ -22,12 +22,13 @@ sigma2 = zeros(n, 1);
 %
 
 
-
-
-
-
-
-
+% Iterando features e implementando cálculos
+    for i = 1:n
+        media = mean(X(:, i));
+        mu(i) = media;
+        var = sum((X(:, i) - media).^2)/m;
+        sigma2(i) = var;
+    endfor
 
 
 % =============================================================
