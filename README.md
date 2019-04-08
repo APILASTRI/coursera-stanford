@@ -8,6 +8,24 @@ maravilhoso curso de introdução a Machine Learning ofertado na plataforma Cour
 Durante as 11 semanas de curso, preparei, não apenas anotações individuais, mas também verdadeiras apresentações sobre cada um dos temas tratados com o intuito de, cedo ou tarde, propor palestras gratuitas àqueles que, assim como eu, se sentem cada vez mais adeptos a este
 universo.
 
+# Conteúdo Programático
+
+* Regressão Linear com Uma Variável
+* Regressão Linear com Várias Variáveis
+* Regressão Logística
+* Regularização
+* Representação de Redes Neurais
+* Treinando Redes Neurais
+* Machine Learning na Prática
+* Métricas para Performance de Modelos
+* SVM
+* KMeans
+* Redução de Dimensionalidade (PCA)
+* Detecção de Anomalia
+* Sistemas de Recomendação
+* Machine Learning em Larga Escala
+* Aplicação Prática: OCR
+
 # Apresentações
 
 Abaixo um overview sobre como acessar todas as apresentações criadas durante o curso.
@@ -15,7 +33,7 @@ Abaixo um overview sobre como acessar todas as apresentações criadas durante o
 <table>
 <tr>
 <th>Semana</th>
-<th>Título</th>
+<th>Título da Apresentação</th>
 </tr>
   
 <tr>
