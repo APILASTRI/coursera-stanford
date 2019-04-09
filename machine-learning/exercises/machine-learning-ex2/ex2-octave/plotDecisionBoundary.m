@@ -38,6 +38,10 @@ else
         end
     end
     z = z'; % important to transpose z before calling contour
+    
+    sizeu = size(u)
+    sizev = size(v)
+    sizez = size(z)
 
     % Plot z = 0
     % Notice you need to specify the range [0, 0]
