@@ -17,6 +17,7 @@ all_theta = zeros(num_labels, n + 1);
 
 % Add ones to the X data matrix
 X = [ones(m, 1) X];
+size(X)
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: You should complete the following code to train num_labels
