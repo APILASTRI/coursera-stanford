@@ -9,6 +9,7 @@ num_labels = size(Theta2, 1);
 
 % You need to return the following variables correctly 
 p = zeros(size(X, 1), 1);
+dimp = size(p)
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Complete the following code to make predictions using
@@ -25,8 +26,10 @@ X = [ones(m, 1) X];
 a2 = sigmoid(X * Theta1');
 a2 = [ones(m, 1) a2];
 htheta = sigmoid(a2 * Theta2');
+dim_htheta = size(htheta)
 
 [temp, p] = max(htheta, [], 2);
+
 
 % =========================================================================
 
