@@ -39,18 +39,17 @@ J = unreg_J + reg_J;
 
 % Primeiro passo - calculando deltas
 delta3 = h_theta - y_train;
-dim_delta3 = size(delta3)
-delta3_example = delta3(1:5, :)
 delta2 = (delta3 * Theta2_unrolled)(:, 2:end) .* sigmoidGradient(z2); % excluindo termo bias
-dim_delta2 = size(delta2)
-delta2_example = delta2(1:5, :)
+delta2_exemplo = delta2(1, :)
+sigz2 = sigmoidGradient(z2);
 
 % Segundo passo - calculando D1 e D2
 D1 = delta2' * a1;
 D2 = delta3' * a2;
 dim_D1 = size(D1)
+D1_exemplo = D1(1, :)
 dim_D2 = size(D2)
-
+D2_exemplo = D2(1, :)
 % Calculando gradientes
 Theta1_grad = D1 / m + lambda * [zeros(hidden_layer_size, 1) Theta1_unrolled(:, 2:end)] / m;
 Theta2_grad = D2 / m + lambda * [zeros(num_labels, 1) Theta2_unrolled(:, 2:end)] / m;
