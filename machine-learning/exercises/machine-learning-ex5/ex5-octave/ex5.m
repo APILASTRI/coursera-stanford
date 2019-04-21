@@ -136,6 +136,7 @@ p = 8;
 X_poly = polyFeatures(X, p);
 [X_poly, mu, sigma] = featureNormalize(X_poly);  % Normalize
 X_poly = [ones(m, 1), X_poly];                   % Add Ones
+X_poly(1, :)
 
 % Map X_poly_test and normalize (using mu and sigma)
 X_poly_test = polyFeatures(Xtest, p);
